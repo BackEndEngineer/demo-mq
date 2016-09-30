@@ -1,0 +1,19 @@
+# Created by .gitignore support plugin (hsz.mobi)
+*.jar
+*.war
+*~
+*.class
+*.lock
+*.DS_Store
+*.swp
+*.out
+target/
+.settings/
+.classpath
+.project
+.metadata/
+.idea/
+.mine/
+logs/
+*.log
+*.iml

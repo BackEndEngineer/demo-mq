@@ -1,0 +1,21 @@
+mq:
+  exchanges: #事件监听对象
+    - name: exchange0
+    - name: exchange1
+
+  queues: #监听事件的队列
+    - name: queue0
+      durable: true
+
+    - name: queue1
+      durable: true
+
+  binds: #设置事件通知的绑定关系
+    - queue: queue0
+      exchanges:
+        - exchange: exchange0
+        - exchange: exchange1
+
+    - queue: queue1
+      exchanges:
+        - exchange: exchange0
